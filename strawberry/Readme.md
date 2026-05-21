@@ -1,6 +1,6 @@
 # Strawberries & Exam Performance - A Longitudinal Study Workshop
 
-![](./strawberry_student.png)
+![](../assets/strawberry_student.png)
 
 Does eating a certain amount of strawberries every day improve exam performance over time?
 
@@ -14,7 +14,7 @@ The goal of this workshop is not only to test whether strawberries help students
 
 ## Study Design
 
-![](strawberry_study.png)
+![](../assets/strawberry_study.png)
 
 ### Overview
 
