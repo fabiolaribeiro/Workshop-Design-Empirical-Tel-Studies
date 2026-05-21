@@ -15,13 +15,9 @@ This repository contains workshop materials and fictional longitudinal TEL examp
 ## Workshop Case Studies: Longitudinal Studies
 
 ### Breathing Exercise & Academic Performance
-A fictional longitudinal TEL intervention study exploring whether short breathing exercises can enhance students’ engagement and academic performance over time.
-
-🔗 https://github.com/fabiolaribeiro/jtel26-longitudinal-breathing-study
+[A fictional longitudinal TEL intervention study exploring whether short breathing exercises can enhance students’ engagement and academic performance over time.](./breathing/README.md)
 
 ---
 
 ### Strawberries & Exam Performance
-A fictional longitudinal TEL intervention study exploring whether daily strawberry consumption can enhance students’ academic performance over time.
-
-🔗 https://github.com/fabiolaribeiro/jtel26-longitudinal
+[A fictional longitudinal TEL intervention study exploring whether daily strawberry consumption can enhance students’ academic performance over time.](./strawberry/Readme.md)

@@ -1,0 +1,72 @@
+# Load required libraries
+library(readr)
+library(dplyr)
+library(ggplot2)
+library(lme4)
+library(lmerTest)
+
+# -----------------------------
+# Cell 2
+# -----------------------------
+
+# Read CSV file
+df <- read.csv("strawberry.csv", sep = ";")
+
+# Display first rows
+head(df)
+
+# -----------------------------
+# Cell 3
+# -----------------------------
+
+# Descriptive statistics by group
+df %>%
+  group_by(group) %>%
+  summarise(
+    count = n(),
+    mean = mean(exam_score, na.rm = TRUE),
+    sd = sd(exam_score, na.rm = TRUE),
+    min = min(exam_score, na.rm = TRUE),
+    q1 = quantile(exam_score, 0.25, na.rm = TRUE),
+    median = median(exam_score, na.rm = TRUE),
+    q3 = quantile(exam_score, 0.75, na.rm = TRUE),
+    max = max(exam_score, na.rm = TRUE)
+  )
+
+# -----------------------------
+# Cell 4
+# -----------------------------
+
+# Calculate mean scores
+mean_scores <- df %>%
+  group_by(week, group) %>%
+  summarise(
+    exam_score = mean(exam_score, na.rm = TRUE),
+    .groups = "drop"
+  )
+
+# Create line plot
+ggplot(mean_scores, aes(x = week, y = exam_score, color = group)) +
+  geom_line() +
+  geom_point(size = 2) +
+  labs(
+    title = "Average Exam Scores Over Time",
+    x = "Week",
+    y = "Exam Score"
+  ) +
+  theme_minimal()
+
+# -----------------------------
+# Cell 5
+# -----------------------------
+
+# Mixed-effects linear model
+model <- lmer(
+  exam_score ~ week + actual_strawberries_g + study_hours + stress_level +
+    (1 | participant_id),
+  data = df
+)
+
+# Show model summary
+summary(model)
+
