@@ -10,6 +10,8 @@ This repository contains workshop materials and fictional longitudinal TEL examp
 - mixed-method analyses
 - evidence generation in TEL
 
+[You can find the slides here](./Documents/JTEL_WorkshopPresentation.pdf)
+
 ---
 
 ## Workshop Case Studies: Longitudinal Studies
