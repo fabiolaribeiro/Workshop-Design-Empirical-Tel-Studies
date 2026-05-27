@@ -25,7 +25,7 @@ The activity is also designed to support discussions about:
 
 Overview
 This workshop uses an artificial longitudinal dataset simulating student behavior over an 4 semesters of university study.
-Participants were randomly assigned to the  four different intake groups and repeatedly measured over time.
+Participants were randomly assigned to the  three different intake groups and repeatedly measured over time.
 
 The dataset was designed for teaching and has these features/details:
 
